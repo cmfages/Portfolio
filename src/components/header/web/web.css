@@ -1,0 +1,56 @@
+.web {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.web-option {
+    font-size: 20px;
+    margin-right: 16px;
+    font-weight: 700;
+}
+
+.web-option a {
+    position: relative;
+    text-decoration: none;
+    color: #3D8361;
+    display: flex;
+    align-items: center;
+}
+
+.web-option a,
+.web-option a::before,
+.web-option a::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.web-option a::after {
+    content: '';
+    position: absolute;
+    background-color: #82CD47;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transform: 0.3s;
+}
+
+.web-option a:hover {
+    color: #82CD47;
+}
+
+.web-option a:hover:after {
+    width: 100%;
+}
+
+.option-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 4px;
+}
+
+.web-option:last-child {
+    margin-right: 0px;
+}
